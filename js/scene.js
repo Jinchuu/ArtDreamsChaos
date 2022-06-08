@@ -7,3 +7,13 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
+var geometry = new THREE.BoxGeometry(1,1,1);
+var material = new THREE.MeshBasicMaterial({color: green});
+var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+let animate = function(){
+    renderer.render(scene, camera);
+
+}
+animate();

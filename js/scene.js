@@ -1,5 +1,5 @@
 var scene = new THREE.scene();
-var camera = new THREE.perspectiveCamera(75, window.innerWidth, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 camera.position.z = 5;
 

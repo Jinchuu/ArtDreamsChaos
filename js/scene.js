@@ -13,6 +13,8 @@ var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 let animate = function(){
+    cube.rotation.x += 0.01;
+    requestAnimationFrame(animate);
     renderer.render(scene, camera);
 
 }

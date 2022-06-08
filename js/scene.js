@@ -16,7 +16,5 @@ let animate = function(){
     cube.rotation.x += 0.01;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
-    
-
 }
 animate();
